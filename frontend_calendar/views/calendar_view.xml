@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+
+        <template id="public_calendar_view" name="Public Calendar">
+
+            <t t-call="website.layout">
+
+                <div id="wrap">
+
+                    <div class="container">
+                        <script type="text/javascript"
+                                src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+                        <script type="text/javascript" src="/frontend_calendar/static/src/js/calendar_ajax.js"></script>
+
+                        <link rel="stylesheet" type="text/css" href="/frontend_calendar/static/src/css/styles.css"
+                              media="screen"></link>
+
+                        <form enctype="multipart/form-data" role="form" action="/web/public-calendar" method="POST">
+
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                            <!-- real calendar view -->
+
+                            <div>Calendar</div>
+
+                            <input type="hidden" id="month" name="month" t-att-value="month"/>
+                            <input type="hidden" id="year" name="year" t-att-value="year"/>
+
+                            <table class="center pT20 forPrintHidden">
+                                <tr>
+                                    <td>
+                                        <input type="button" class="calendar_direction actButton" id="previous"
+                                               name="direction" value="&#8592;"/>
+                                        <input type="button" class="calendar_direction actButton" id="next"
+                                               name="direction" value="&#8594;"/>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <div class="center pT20" id="calendar_container">
+                                <t t-if="not direction">
+                                    <span t-raw="html_calendar_code"/>
+                                </t>
+                            </div>
+                            <!-- end of real calendar view -->
+                        </form>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <record id="public_calendar_link" model="website.menu">
+            <field name="name">Public Calendar</field>
+            <field name="url">/web/public-calendar</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">99</field>
+        </record>
+
+    </data>
+</odoo>

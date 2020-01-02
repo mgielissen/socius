@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="breitschtraeff" name="breitschtraeff style_back" inherit_id="website.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="shortcut icon" href="/breitschtraeff_resources/static/src/images/favicon.ico" type="image/x-icon"/>
+            <link rel="favicon.ico"   href="/breitschtraeff_resources/static/src/images/favicon.ico" type="image/x-icon"/>
+            <link rel="stylesheet"    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" type='text/css'/>
+            <link rel='stylesheet'    href='https://fonts.googleapis.com/css?family=Rasa:400,500,600' type='text/css'/>
+            <link rel="stylesheet"    href="/breitschtraeff_resources/static/src/less/style.less" type="text/less"/>
+            <script type="text/javascript" src="/breitschtraeff_resources/static/src/js/afbs_website.js"></script>
+            <script type="text/javascript" src="/breitschtraeff_resources/static/src/js/jquery.easing.min.js"></script>
+            <script type="text/javascript" src="/breitschtraeff_resources/static/src/js/jquery.gridrotator.js"></script>
+            <script type="text/javascript" src="/breitschtraeff_resources/static/src/js/modernizr.custom.26633.js"></script>
+            <script type="text/javascript" src="/breitschtraeff_resources/static/src/js/website_custom_home.js"></script>
+        </xpath>
+    </template>    
+</odoo>

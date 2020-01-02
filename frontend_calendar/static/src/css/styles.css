@@ -1,0 +1,43 @@
+/* styles for html calendar */
+
+.day-data {
+    font-family:Arial,Verdana,Helvetica,sans-serif;
+    font-size:14px;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+table.month {
+	width:84%;
+}
+
+.outside-month {
+    width:12%;
+    color:#bfbfbf;
+    border:solid #bfbfbf 1px;
+    padding:6px
+    vertical-align:top;
+}
+
+.weekend-days {
+    width:12%;
+    background-color:#99ffb9;
+    border:solid gray 1px;
+    padding:6px
+    vertical-align:top;
+}
+
+.working-days {
+    width:15%;
+    background-color:lightblue;
+    border:solid gray 1px;
+    padding:6px
+    vertical-align:baseline;
+}
+
+div.td-inner {
+    height:100px ! important;
+    overflow: hidden;
+}
