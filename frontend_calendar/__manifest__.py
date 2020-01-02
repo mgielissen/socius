@@ -1,6 +1,6 @@
 {
     'name': 'frontend_calendar',
-    'version': '13.0.0',
+    'version': '13.0.1.0',
     'author': "Ogi Vranesic"
               "Socius IGB",
     'website': 'http://www.redcor.ch',

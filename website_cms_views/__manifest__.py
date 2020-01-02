@@ -1,7 +1,7 @@
 {
     'name': 'Views for CMS Pages',
     'summary': 'Views for CMS Pages',
-    'version': '13.0.1.0.0',
+    'version': '13.0.1.0',
     'description': 'Views for CMS Pages',
     'depends': ['website_cms'],
     'author': 'Ogi Vranesic',

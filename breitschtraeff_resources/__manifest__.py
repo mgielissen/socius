@@ -17,7 +17,7 @@
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
     # for the full list
     'category': 'Theme/Creative',
-    'version': '13.0.1',
+    'version': '13.0.1.0',
 
     # any module necessary for this one to work correctly
     'depends': ['backend_theme_v13','website'],

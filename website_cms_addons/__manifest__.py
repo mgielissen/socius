@@ -5,7 +5,7 @@
     'summary': """
     addons for the website_cms module
     """,
-    'version': '13.0.1.0.0',
+    'version': '13.0.1.0',
     'description': """
     addons for te website_cms module
     """,
