@@ -54,7 +54,7 @@
 
   <template id="alternate_languages" name="CMS alternate languages">
     <t t-if="request and request.is_frontend_multilang and website">
-        <t t-foreach="website.get_alternate_languages(request.httprequest, main_object=main_object)" t-as="lg">
+        <t t-foreach="website._get_alternate_languages(request.httprequest, main_object=main_object)" t-as="lg">
             <link rel="alternate" t-att-hreflang="lg['hreflang']" t-att-href="lg['href']"/>
         </t>
     </t>

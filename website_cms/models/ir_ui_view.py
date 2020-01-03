@@ -5,7 +5,7 @@ from odoo.http import request
 from odoo.addons.http_routing.models.ir_http import url_for as url_for_orig
 
 
-def url_for(path_or_uri, lang=None, main_object=None):
+def url_for(path_or_uri, lang=None, main_object=None,lang_code=None):
     """Override to avoid building links for not translated contents."""
     if main_object and main_object._name == 'cms.page':
         if lang and not lang == request.website.default_lang_code \
@@ -17,7 +17,7 @@ def url_for(path_or_uri, lang=None, main_object=None):
             if lang not in avail_transl:
                 return '/' + lang
 
-    return url_for_orig(path_or_uri, lang=lang)
+    return url_for_orig(path_or_uri, lang_code=lang_code)
 
 
 class IRUIView(models.Model):

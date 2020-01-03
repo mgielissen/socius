@@ -8,7 +8,7 @@
 
 from odoo import models,fields,api
 
-from odoo.tools import ImageProcess as image_tools
+from odoo.tools import image as image_tools
 
 
 class WebsiteImageMixin(models.AbstractModel):
@@ -44,9 +44,10 @@ class WebsiteImageMixin(models.AbstractModel):
         for record in self:
             if record.image:
                 record.image_medium = \
-                    image_tools.resize(record.image)
+                    image_tools.image_process(record.image)
                 record.image_thumb = \
-                    image_tools.resize(record.image,128, 128)
+                    image_tools.image_process(record.image,
+                                                          size=(128, 128))
             else:
                 record.image_medium = False
                 record.image_thumb = False
@@ -128,8 +129,8 @@ class WebsiteCoreMetadataMixin(models.AbstractModel):
         readonly=True,
     )
 
-
-    def _write(self, vals):
+    # @api.multi
+    def write(self, vals):
         """Update published date."""
         if vals.get('website_published'):
             vals['published_date'] = fields.Datetime.now()

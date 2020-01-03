@@ -166,8 +166,8 @@ class CMSPage(models.Model):
     )
 
 
-
-    def _write(self, vals):
+    # @api.multi
+    def write(self, vals):
         """Make sure to refresh website nav cache."""
         self.ensure_one()
         if 'nav_include' in vals:

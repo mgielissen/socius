@@ -4,7 +4,7 @@
 {
     "name": "Website CMS",
     "summary": "CMS features",
-    "version": "13.0.1.0",
+    "version": "13.0.1.0.0",
     "category": "Website",
     "website": "https://odoo-community.org/",
     "author": "Simone Orsi - Camptocamp, Odoo Community Association (OCA)",

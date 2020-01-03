@@ -146,9 +146,9 @@ class Website(models.Model):
             [('active', '=', active)])
 
 
-    def get_alternate_languages(self,req=None,main_object=None):
+    def _get_alternate_languages(self,req=None,main_object=None):
         """Override to drop not available translations."""
-        langs = super(Website, self).get_alternate_languages(req=req)
+        langs = super(Website, self)._get_alternate_languages(canonical_params=req)
 
         avail_langs = None
         if main_object and main_object._name == 'cms.page':

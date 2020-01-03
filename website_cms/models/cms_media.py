@@ -232,8 +232,8 @@ class CMSMedia(models.Model):
             vals['url'] = to_embed_url(url)
         return super(CMSMedia, self).create(vals)
 
-
-    def _write(self, vals):
+    # @api.multi
+    def write(self, vals):
         """Override to keep link w/ page resource."""
         if vals.get('page_id') is not None:
             vals['res_id'] = vals.get('page_id')
