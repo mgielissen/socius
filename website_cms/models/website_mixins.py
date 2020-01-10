@@ -24,7 +24,7 @@ class WebsiteImageMixin(models.AbstractModel):
     _name = "website.image.mixin"
     _description = "A mixin for providing image features"
 
-    image = fields.Binary('Image', attachment=True)
+    image = fields.Binary('Image',store=True, attachment=True)
     image_medium = fields.Binary(
         'Medium',
         compute="_get_image",
@@ -46,8 +46,7 @@ class WebsiteImageMixin(models.AbstractModel):
                 record.image_medium = \
                     image_tools.image_process(record.image)
                 record.image_thumb = \
-                    image_tools.image_process(record.image,
-                                                          size=(128, 128))
+                    image_tools.image_process(record.image, size=(128, 128))
             else:
                 record.image_medium = False
                 record.image_thumb = False
@@ -129,7 +128,6 @@ class WebsiteCoreMetadataMixin(models.AbstractModel):
         readonly=True,
     )
 
-    # @api.multi
     def write(self, vals):
         """Update published date."""
         if vals.get('website_published'):

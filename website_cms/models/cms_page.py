@@ -166,10 +166,10 @@ class CMSPage(models.Model):
     )
 
 
-    # @api.multi
     def write(self, vals):
         """Make sure to refresh website nav cache."""
         self.ensure_one()
+        print("vals from write",self.image)
         if 'nav_include' in vals:
             self.env['website'].clear_caches()
         return super(CMSPage, self).write(vals)
@@ -178,8 +178,10 @@ class CMSPage(models.Model):
     def create(self, vals):
         """Make sure to refresh website nav cache."""
         res = super(CMSPage, self).create(vals)
-        if 'nav_include' in vals:
-            self.env['website'].clear_caches()
+        print(vals)
+        # if 'nav_include' in vals:
+        #     print("inside cache")
+        #     self.env['website'].clear_caches()
         return res
 
 

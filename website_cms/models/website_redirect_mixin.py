@@ -61,7 +61,7 @@ class CMSLinkMixin(models.AbstractModel):
     view_id = fields.Many2one(
         string='Odoo View',
         comodel_name='ir.ui.view',
-        domain=[('page', '=', True)]
+        domain=[('track', '=', True)]
     )
     url = fields.Char(
         'Custom URL',
