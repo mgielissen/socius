@@ -1,0 +1,100 @@
+/*cover image*/
+.pb256 {
+
+    padding-bottom: 39% !important;
+
+}
+
+.btn-primary {
+
+    margin-left: 37%;
+    color:#FFFFFF;
+    background-color:#27550D;
+    border-color:#264A29;
+    margin-top: -3%;
+    font-size: 135%;
+
+}
+/*cover image ends*/
+/*--------------------------------------------------------------*/
+/*News and trending begins*/
+
+img {
+
+    vertical-align: middle;
+    border-style: none;
+    height: 70%;
+
+}
+
+.s_three_columns .align-items-stretch .card {
+
+    height: 85%;
+
+}
+
+/*News and trending ends*/
+/*--------------------------------------------------------------*/
+/*why climate change begins*/
+
+.s_parallax_no_overflow_hidden{
+
+    background-image: none;
+    padding-bottom: 6%;
+
+}
+
+.definitions_container {
+
+    text-align: center;
+    margin-bottom: 4.16667%;
+
+}
+
+.definition {
+
+    margin: 0 10px 20px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.definition:hover {
+
+    border-color: white;
+
+}
+
+.dot {
+
+  height: 163px;
+  width: 163px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 6%;
+
+}
+
+.a {
+
+    margin-top: 39%;
+    color: black;
+    font-size: 34px;
+
+}
+
+/*why climate change ends*/
+/*--------------------------------------------------------------*/
+/*backend data starts*/
+
+.bg-white {
+
+    background-color: #FFFFFF !important;
+    color:#212529;
+    height: 100%;
+
+}
+
+/*backend data ends*/
+/*--------------------------------------------------------------*/

@@ -1,0 +1,80 @@
+<odoo>
+    <!--Home Menu-->
+    <template id="website_homeMenu">
+        <div class="col-md-12 list-group">
+            <span href="#" class="list-group-item active"><span class="pull-right" id="slide-submenu">
+                <img class="img-responsive" alt="close" src="/website_cms_addons/static/src/image/close.png" />
+            </span></span>
+            <nav class="listMenu">
+                <ul t-if="menus">
+                    <li><a href="/" class="active list-group-item">Home </a></li>
+                    <li><a href="/cmspages" class="active list-group-item"
+                           groups="website.group_website_designer">Cms Pages</a></li>
+                    <li class="afdrop" t-foreach="menus" t-as="m" data-clicks="false">
+                        <a  class="active list-group-item" t-att-href="'/cms/'+str(m['id'])">
+                            <span class="mainMenus" t-esc="m['name']"></span> <b class="caret"></b> </a>
+                    <ul class="sub-menu afbsDropDown">
+                        <t t-foreach="sub_menus" t-as="sm">
+                            <li t-if="sm['parent_id'] == m['id'] and sm['redirect_to_id'] == True">
+                                <a t-att-href="sm['redirect_to_id']" class="list-group-item">
+                                    <span t-esc="sm['name']"/></a></li>
+                            <li t-if="sm['parent_id'] == m['id'] and sm['redirect_to_id'] != True">
+                                <a t-att-href="'/cms/'+str(sm['id'])" class="list-group-item">
+                                    <span t-esc="sm['name']"/></a></li>
+                        </t>
+                    </ul>
+                    </li>
+                    <li class="afdrop" t-if="event_entries" data-clicks="false">
+                        <a href="#" class="list-group-item event-menu-list">AFBS Events <b class="caret"></b></a>
+                        <ul class="sub-menu afbsDropDown">
+                        <t t-foreach="event_entries" t-as="e">
+                            <li t-if="e['id']">
+                                <a t-att-href="'/event/%s' % slug(request.env['event.event'].sudo().browse(e['event_rel']))"
+                                   class="list-group-item">
+                                    <span t-esc="e['name']"/>
+                                </a></li>
+                        </t>
+                    </ul>
+                    </li>
+                    <!--<li class="afdrop" t-if="not request.session.uid">-->
+                        <!--<t t-set="news_letter" t-value="request.env['cms.page'].sudo().search([('view_id', '=', 'News Letters')])"/>-->
+                        <!--<a t-att-href="news_letter and '/cms/'+str(news_letter[0].id) or '#'"-->
+                           <!--class="list-group-item">Subscriptions </a>-->
+                    <!--</li>-->
+                </ul>
+            </nav>
+        </div>
+    </template>
+    <!--Template for Image Grid-->
+    <template name="Website Home Image Grid" id="website_image_grid">
+        <div class="container">
+            <section class="main">
+                <div id="ri-grid" class="ri-grid ri-grid-size-1 ri-shadow">
+                    <img class="ri-loading-image" src="/website_cms_addons/static/src/image/loading.gif"/>
+                    <ul>
+                        <!--<li t-foreach="ur" t-as="id"><a href="#"><img t-att-src="'web/image/'+id" alt="Image"/></a></li>-->
+                        <li t-foreach="ur" t-as="id"><a href="#"><img t-att-src="'web/content/cms.media/'+id+'/datas'"/></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </template>
+
+    <template id="user_navbar_extend" inherit_id="website.user_navbar" priority="1">
+        <xpath expr="//li[@id='promote-menu']" position="replace">
+            <li class="dropdown" id="promote-menu">
+                        <a class="dropdown-toggle o-no-caret waves" data-toggle="dropdown" href="#">Promote</a>
+                        <div class="dropdown-menu oe_promote_menu" role="menu">
+                            <a role="menuitem" data-action="promote-current-page" href="#" title="Promote page on the web" class="dropdown-item">Optimize SEO</a>
+                        <a role="menuitem"  href="https://www.adspike.com" title="Optimize your AdWords account" class="dropdown-item">Optimize AdWords Campaign</a>
+                        </div>
+<!--                <div class="dropdown-menu oe_promote_menu1" role="menu">-->
+<!--                            <a role="menuitem" data-action="promote-current-page" href="https://www.adspike.com" title="Optimize your AdWords account" class="dropdown-item">Optimize AdWords Campaign</a>-->
+<!--                        </div>-->
+                    </li>
+        </xpath>
+
+
+        <!--<xpath expr="//ul[@id='oe_systray']/li[@class='o_planner_systray']" position="replace"></xpath>-->
+    </template>
+</odoo>
