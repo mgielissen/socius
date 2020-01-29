@@ -1,7 +1,0 @@
-.. _redirects:
-
-#########
-Redirects
-#########
-
-TODO
