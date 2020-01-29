@@ -73,6 +73,7 @@ img {
   border-radius: 50%;
   display: inline-block;
   margin-top: 6%;
+  margin-left: 25px;
 
 }
 
@@ -83,7 +84,22 @@ img {
     font-size: 34px;
 
 }
+.hover_title {
+    display: none;
+    width: 90%;
+    vertical-align: middle;
+    color:black;
+    font-size:  34px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+.a:hover .hover_title{
+    display: inline-block;
+}
 
+.dot:hover .a {
+    display: inline-block;
+}
 /*why climate change ends*/
 /*--------------------------------------------------------------*/
 /*backend data starts*/
@@ -98,3 +114,61 @@ img {
 
 /*backend data ends*/
 /*--------------------------------------------------------------*/
+/*.carousel-control-prev-icon,*/
+.carousel-control-next-icon {
+/*  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;*/
+  background-color:#423f40;
+  border: 0;
+  border-radius: 50% 0 0 50%;
+  bottom: 0;
+  height: 80px;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  right: -40px;
+  text-align: center;
+  top: 50%;
+  width: 80px;
+  margin-bottom: 95%;
+  margin-left: 72%;
+}
+.carousel-control-prev-icon{
+    background-color:#423f40;
+  border: 0;
+  border-radius: 0 50% 50% 0;
+  bottom: 0;
+  height: 80px;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  right: -40px;
+  text-align: center;
+  top: 50%;
+  width: 80px;
+  margin-bottom: 95%;
+  margin-right: 74%;
+  }
+
+/*.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+    background-color: #fff;
+    right: 0;
+}
+/*.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}

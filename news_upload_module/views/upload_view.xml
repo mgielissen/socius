@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="tree_custom_model" model="ir.ui.view">
+        <field name="name">custom.model.tree</field>
+        <field name="model">backend.model</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="custom_form_view" model="ir.ui.view">
+        <field name="name">custom.model.form</field>
+        <field name="model">backend.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <table>
+                    <group>
+                    <field name="name" string="Content Heading"/>
+                    <field placeholder="Write Content here" type="text" name="comment" string="Content" id="content_text"  rows="10" cols="30" maxlength = "40"/>
+                    <field name="data_file"/>
+                    </group>
+
+                </table>
+            </form>
+        </field>
+    </record>
+    <record id="custom_action" model="ir.actions.act_window">
+            <field name="name">Content upload</field>
+            <field name="res_model">backend.model</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                 <form>
+                <field name="name" string="Content Heading"/>
+            </form>
+            </field>
+        </record>
+
+    <!--create child menu/Action menu-->
+
+        <menuitem name="News Upload" id="custom_top_menu" action="custom_action" />
+</odoo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<!--<odoo>-->
+<!--    &lt;!&ndash;    tree view&ndash;&gt;-->
+<!--    <record id="tree_custom_model" model="ir.ui.view">-->
+<!--        <field name="name">custom.model.tree</field>-->
+<!--        <field name="model">custom.model</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree>-->
+<!--                <field name="name"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--    <record id="custom_form_view" model="ir.ui.view">-->
+<!--        <field name="name">custom.model.form</field>-->
+<!--        <field name="model">custom.model</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--    <record id="custom_action" model="ir.actions.act_window">-->
+<!--            <field name="name">Car</field>-->
+<!--            <field name="type">ir.actions.act_window</field>-->
+<!--            <field name="res_model">custom.model</field>-->
+<!--&lt;!&ndash;            <field name="view_type">form</field>&ndash;&gt;-->
+<!--            <field name="view_mode">tree,form</field>-->
+<!--            <field name="help" type="html">-->
+<!--                <p class="oe_view_nocontent_create">-->
+<!--                    Click to create a New Order.-->
+<!--                </p>-->
+<!--            </field>-->
+<!--        </record>-->
+
+<!--    &lt;!&ndash;create child menu/Action menu&ndash;&gt;-->
+
+<!--        <menuitem name="News upload" id="custom_sub_menu"/>-->
+<!--&lt;!&ndash;        <menuitem name="Car Rental Management" id="custom_sub_menu" parent="custom_top_menu"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <menuitem id="custom_child_menu" name="Car" action="custom_action"  parent="custom_sub_menu" sequence="6"/>&ndash;&gt;-->
+
+<!--</odoo>-->
