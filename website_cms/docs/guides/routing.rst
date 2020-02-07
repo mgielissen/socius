@@ -1,7 +1,0 @@
-.. _routing:
-
-#######
-Routing
-#######
-
-TODO
