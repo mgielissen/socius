@@ -11,5 +11,4 @@ class Websitedetail(http.Controller):
         details = request.env['backend.model'].browse(int(kw['id']))
         for i in details:
             data.append(i)
-            print(i.date_from)
         return request.render('climate_website.content',  {'data':data})

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+       <template id="new_header_layout" inherit_id="website.layout" name="Header Layout Inherit">
+
+		   <xpath expr="//div[@id='wrapwrap']//header//div[hasclass('container')]" position="attributes">
+				<attribute name="style">display: none;</attribute>
+		   </xpath>
+		   <xpath expr="//div[@id='wrapwrap']//header//nav[hasclass('navbar')]" position="attributes">
+			   				<attribute name="style">display: none;</attribute>
+		   </xpath>
+
+            <xpath expr="//div[@id='wrapwrap']//header[@id='top']" position="after">
+				<div>
+						<ul class="topnav">
+						  <li><a  href="#facts" target="_self">FACTS</a></li>
+						  <li><a href="#articles">ARTICLES</a></li>
+						  <li><a href="#solutions">SOLUTIONS</a></li>
+							<li><a href="#contact">EXPLORE</a></li>
+							<li><a href="#contact">RESOURCES</a></li>
+							<li><a href="#contact">SCIENCE</a></li>
+							<li><a href="/contactus">CONTACT US</a></li>
+							<div>
+							<li>
+								<t t-if="website.user_id == user_id">
+									<a href="/web/login">SIGNIN</a>
+								</t>
+							</li>
+
+							 <t t-if="website.user_id != user_id">
+                                    <li style="padding-top: 0.9%;color:white;font-size: 17px;"><b><t t-esc="user_id.name"/></b></li>
+                                    <li><a t-attf-href="/web/session/logout?redirect=/">SIGNOUT</a></li>
+							 </t>
+							</div>
+						</ul>
+				</div>
+            </xpath>
+        </template>
+
+
+    </data>
+</odoo>
+

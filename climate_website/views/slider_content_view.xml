@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="slider_content_view">
+              <t t-call="website.layout">
+                    <section class="s_text_image pt32 pb32" data-name="Image - Text">
+                            <div class="container">
+                              <div class="row align-items-center">
+                                    <img src='/climate_website/static/src/img/cover.jpeg' alt="Placeholder" style="margin-left: 12%;height: 50%;"/>
+                                          <div class="row">
+
+                                            <div class="col-12" style="padding-left: 10%;font-size: 19px;line-height: 30px;">
+                                                <br></br>
+                                                Crocodile bones, 50 million years old, have shown up on the Arctic island of Ellesmere, and that’s a problem.
+                                                Scientists have been unable to explain how the Arctic could have warmed up enough to host those tropical creatures.
+                                                <br></br>
+                                            </div>
+
+                                            <div class="col-12" style="padding-left: 10%;font-size: 19px;line-height: 30px;">
+                                                Given that they are so insubstantial—all the moisture that constitutes clouds planetwide at any given moment would amount to
+                                                no more than a micro-thin film of water if spread out over Earth’s surface—clouds have an outsized impact on our climate.
+                                                 <br></br>
+                                            </div>
+
+                                             <div class="col-12" style="padding-left: 10%;font-size: 19px;line-height: 30px;">
+                                                  They cool Earth's surface by reflecting much of the Sun’s energy back into space. They warm like blankets by preventing the
+                                                  planet from radiating away all of the heat it absorbs each day. And of course, they are key components of the water cycle,
+                                                  storing water that has evaporated from the oceans and other bodies and then returning it as rain and snow.
+                                                   <br></br>
+                                            </div>
+
+                                          </div>
+                                     <a href="/" >Back to home</a>
+                              </div>
+                            </div>
+                    </section>
+              </t>
+        </template>
+    </data>
+</odoo>

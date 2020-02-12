@@ -3,25 +3,88 @@
     <data>
         <template id="climate_homepage_template" inherit_id="website.homepage">
           <xpath expr="//div[@id='wrap']" position="inside">
+              <div class="header-nav">
+					<div class="custom_header" style="box-sizing: border-box; box-shadow: 0 1px 3px 0 #d4cfcf !important;">
+                        <div class="row" style="margin-left: 0px; margin-right: 0px;padding: 1%;">
+                            <div class="col-md-3" style="text-align:center;" >
+                                <a t-attf-href ="/" >
+                                    <img t-attf-src="/climate_website/static/src/img/logo.png" alt="Logo" style="height: 76px;"/>
+                                </a>
+							</div>
+
+                             <form style="padding: 2.5%;margin-left: 16%;" name="myForm" >
+                                 <input type="text" name="id" placeholder="Please enter the city" />
+                                 <input type="submit" value="Search"/>
+                             </form>
+
+                                    <div class="row" style="margin-left:72%;background-color:black;color:white;border-radius: 13px;width: 27%;text-align: center;margin-top: -6%;">
+                                        <t t-foreach="api" t-as="order">
+
+                                          <div class="col-md-4" style="border-right: 2px solid white;padding-top: 3%;">Temperature
+                                             <h5 style="text-align: center;color: red;"><i class="fa fa-thermometer-half"/><br/>
+                                                 <span t-esc="order['temp']"/>
+                                             </h5>
+                                          </div>
+                                          <div class="col-md-4" style="border-right: 2px solid white;padding-top: 3%;">Pressure
+                                              <h5 style="text-align: center;color: red;"><i class="fa fa-tachometer" /><br/>
+                                                  <span t-esc="order['pressure']"/>
+                                              </h5>
+                                          </div>
+                                          <div class="col-md-4" style="padding-top: 3%;">Humidity
+                                              <h5 style="text-align: center;color: red;"><i class="fa fa-tint" /><br/>
+                                                  <span t-esc="order['humidity']"/>
+                                              </h5>
+                                          </div>
+
+                                        </t>
+                                    </div>
+					    </div>
+                    </div>
+              </div>
+
             <div id="wrap" class="oe_structure oe_empty">
 
-                    <section class="s_cover parallax s_parallax_is_fixed bg-black-50 s_parallax_no_overflow_hidden pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;padding-bottom: 500px ! important;">
-                      <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('climate_website/static/src/img/cover.jpeg'); background-position: 50% 0;"/>
-                      <div class="container">
-                        <div class="row s_nb_column_fixed">
-                          <div class="col-lg-12 s_title" data-name="Title">
-                            <h1 class="s_title_thin o_default_snippet_text" style="font-size: 62px; font-weight: 900;margin-top: -17%;margin-left: 36%;">Clouds, Arctic Crocodiles<br> </br>and a New Climate Model</h1>
+               <section class="s_carousel_wrapper" data-name="Carousel">
+                    <div id="myCarousel1580444200284" class="s_carousel s_carousel_default carousel slide" data-interval="10000">
+                      <ol class="carousel-indicators o_we_no_overlay">
+                        <li data-target="#myCarousel1580444200284" data-slide-to="0" class="active"/>
+                        <li data-target="#myCarousel1580444200284" data-slide-to="1"/>
+<!--                        <li data-target="#myCarousel1580444200284" data-slide-to="2"/>-->
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item oe_img_bg pt152 pb152 active" style="background-image: url(&quot;climate_website/static/src/img/cover.jpeg&quot;);height:  731.55px;" data-name="Slide">
+                          <div class="container">
+                            <div class="row content">
+                                <div class="col-lg-12 s_title" data-name="Title">
+                                    <h1 class="s_title_thin o_default_snippet_text" style="font-size: 51px;font-weight: 600;margin-top: -12%;margin-left: 37%;color:white;">Clouds, Arctic Crocodiles<br> </br>and a New Climate Model</h1>
+                                    <a href="/page/details" class="btn btn-primary flat o_default_snippet_text" style="margin-left: 37%;color:white;">read story</a>
+                                </div>
+                            </div>
                           </div>
-                        <button type="button" class="btn btn-primary">read story</button>
+                        </div>
+                        <div class="carousel-item oe_img_bg pt96 pb96" style="background-image: url(&quot;climate_website/static/src/img/bear.png&quot;);height: 592.55px;" data-name="Slide">
+                            <div class="col-lg-12 s_title" data-name="Title">
+                                    <h1 class="s_title_thin o_default_snippet_text" style="font-size: 51px;font-weight: 600;margin-top: -4%;margin-left: 32%;color:black;">Polar bears and climate change: <br></br>What does the science say?
+                                    </h1>
+                                    <a href="/page/bear" class="btn btn-primary flat o_default_snippet_text" style="margin-left: 32%;color:white;">read story</a>
+                            </div>
                         </div>
                       </div>
-                    </section>
+                      <a class="carousel-control-prev o_we_no_overlay" href="#myCarousel1580444200284" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="carousel-control-prev-icon"/>
+                        <span class="sr-only o_default_snippet_text">Previous</span>
+                      </a>
+                      <a class="carousel-control-next o_we_no_overlay" href="#myCarousel1580444200284" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="carousel-control-next-icon"/>
+                        <span class="sr-only o_default_snippet_text">Next</span>
+                      </a>
+                    </div>
+               </section>
 
-                     <section class="s_three_columns bg-200 pt32 pb32">
+                     <section class="s_three_columns bg-200 pt32 pb32" id="facts">
                         <div class="container">
 
-                            <b><h1>News &amp; Trending
-                            </h1></b>
+                            <b><h1 style="padding-top: 3%;">Facts</h1></b>
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                   <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -72,7 +135,6 @@
                                           </div>
                                         </div>
                                     </div>
-
                                   </div>
                                   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" >
                                     <span class="carousel-control-prev-icon" ></span>
@@ -88,7 +150,7 @@
                      </section>
 
 
-                    <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb961 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" style="background-image: none;">
+                    <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb961 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" style="background-image: none;"  id="articles">
                         <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('climate_website/static/src/img/climate.jpg'); background-position: 50% 0;"/>
                         <div class="container">
                           <div class="row s_nb_column_fixed">
@@ -118,7 +180,7 @@
                     </section>
 
 
-                     <section class="s_three_columns bg-200 pt32 pb32">
+                     <section class="s_three_columns bg-200 pt32 pb32" id="solutions">
                         <div class="container">
                             <h1>Climate Change: How Do We Know?</h1>
                             <div class="row">

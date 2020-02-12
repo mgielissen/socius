@@ -5,16 +5,8 @@
 
 }
 
-.btn-primary {
 
-    margin-left: 37%;
-    color:#FFFFFF;
-    background-color:#27550D;
-    border-color:#264A29;
-    margin-top: -3%;
-    font-size: 135%;
 
-}
 /*cover image ends*/
 /*--------------------------------------------------------------*/
 /*News and trending begins*/
@@ -23,14 +15,14 @@ img {
 
     vertical-align: middle;
     border-style: none;
-    height: 70%;
+    height: 250px;
 
 }
 
-.s_three_columns .align-items-stretch .card {
-
-    height: 85%;
-
+.card-img-top {
+    width: auto;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
 }
 
 /*News and trending ends*/
@@ -121,20 +113,13 @@ img {
 /*--------------------------------------------------------------*/
 /*.carousel-control-prev-icon,*/
 .carousel-control-next-icon {
-/*  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;*/
-  background-color:#423f40;
+
+  /*background-color:#423f40;*/
   border: 0;
   border-radius: 50% 0 0 50%;
   bottom: 0;
   height: 80px;
   margin: 0;
-  margin-bottom: 0px;
   margin-left: 0px;
   right: -40px;
   text-align: center;
@@ -144,13 +129,12 @@ img {
   margin-left: 72%;
 }
 .carousel-control-prev-icon{
-    background-color:#423f40;
+    /*background-color:#423f40;*/
   border: 0;
   border-radius: 0 50% 50% 0;
   bottom: 0;
   height: 80px;
   margin: 0;
-  margin-bottom: 0px;
   margin-left: 0px;
   right: -40px;
   text-align: center;
@@ -160,20 +144,49 @@ img {
   margin-right: 74%;
   }
 
-/*.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover{
-    background-color: #fff;
-    right: 0;
-}
-/*.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
+
+  ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #547d18;
 }
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+h1:target {
+    color: white;
+    background: #1c87c9;
+}
+ ul.topnav1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="bear_content">
+              <t t-call="website.layout">
+                    <section class="s_text_image pt32 pb32" data-name="Image - Text">
+                            <div class="container">
+                              <div class="row align-items-center">
+                                    <img src='/climate_website/static/src/img/bear.png' alt="Placeholder" style="margin-left: 16%;height: 500px;"/>
+                                          <div class="row">
+
+                                            <div class="col-12" style="padding-left: 10%;font-size: 19px;line-height: 30px;">
+                                                <br></br>
+                                                Polar bears (Ursus maritimus) are the poster child for the impacts of climate change on species, and justifiably so.
+                                                To date, global warming has been most pronounced in the Arctic, and this trend is projected to continue.
+                                                There are suggestions that before mid-century we could have a nearly ice-free Arctic in the summer.
+                                                This increases the urgency with which we must act to reduce our greenhouse gas emissions to delay or avoid some of the worst consequences of climate change.
+                                                <br></br>
+                                            </div>
+
+                                            <div class="col-12" style="padding-left: 10%;font-size: 19px;line-height: 30px;">
+                                                Polar bears have relatively high genetic diversity within the species and can disperse over very long distances, suggesting that
+                                                they may have some capacity to adapt to the ongoing changes in the Arctic.
+                                                 <br></br>
+                                            </div>
+
+                                             <div class="col-12" style="padding-left: 10%;font-size: 19px;line-height: 30px;">
+                                                  However, their dependence on sea ice makes them highly vulnerable to a changing climate. Polar bears rely heavily on the sea ice
+                                                 environment for traveling, hunting, mating, resting, and in some areas, maternal dens. In particular, they depend heavily on sea ice-dependent
+                                                 prey, such as ringed and bearded seals. Additionally, their long generation time and low reproductive rate may limit their ability to adapt to
+                                                 changes in the environment.
+                                                   <br></br>
+                                            </div>
+
+                                            <div class="col-12" style="padding-left: 10%;font-size: 19px;line-height: 30px;">
+                                               Priorities for climate-informed polar bear conservation should include identifying and protecting the “last ice areas,” the parts of the Arctic
+                                               that are projected to retain sea ice farthest into the future. It is also important to increase monitoring of polar bear populations, particularly
+                                               their responses to declining sea ice. And as polar bears spend more time on land, we need to be prepared to manage for increased human-polar bear conflict.
+                                               <br></br>
+                                            </div>
+
+                                          </div>
+                                     <a href="/" >Back to home</a>
+
+                              </div>
+                            </div>
+                    </section>
+              </t>
+        </template>
+    </data>
+</odoo>
