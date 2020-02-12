@@ -5,6 +5,8 @@ from odoo.addons.website.controllers.main import Website
 import requests, json
 from datetime import datetime, timedelta
 from dateutil.tz import tzlocal
+import logging
+_logger = logging.getLogger(__name__)
 
 class Website(Website):
 
@@ -30,7 +32,9 @@ class Website(Website):
 
         api_key = "71522e7cc5de039712346f640e2642fd"
         base_url = "http://api.openweathermap.org/data/2.5/weather?"
-
+        _logger.info("++++++++++++++++=")
+        _logger.info(kwargs)
+        x = {}
         if not kwargs:
             city_name = "india"
             complete_url = base_url + "appid=" + api_key + "&q=" + city_name
