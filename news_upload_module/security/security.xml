@@ -1,5 +1,0 @@
-<odoo>
-    <record id="new_group" model="custom.model">
-        <field name="name">News</field>
-    </record>
-</odoo>

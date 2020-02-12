@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <template id="content_one">
+        <template id="content">
               <t t-call="website.layout">
                     <section class="s_text_image pt32 pb32" data-name="Image - Text">
                             <div class="container">
@@ -12,6 +12,7 @@
                                              class="oe_module_icon" style="width: 400px; height: 400px" />
                                 </div>
                                 <div class="col-lg-6 pt16 pb16">
+                                    <h6><span t-esc="order.date_from"/></h6>
                                   <h2 class="o_default_snippet_text"><span t-esc="order.name"/></h2>
                                   <p class="o_default_snippet_text"><span t-esc="order.comment"/></p>
                                 </div>

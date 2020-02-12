@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="assets_frontend_custom" name="Custom Website" inherit_id="web.assets_frontend">
+        <template id="assets_frontend_custom" name="Website" inherit_id="web.assets_frontend">
                 <xpath expr="." position="inside">
                     <link rel="stylesheet" href="/climate_website/static/src/css/color.css"/>
                 </xpath>

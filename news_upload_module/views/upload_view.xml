@@ -14,14 +14,15 @@
         <field name="model">backend.model</field>
         <field name="arch" type="xml">
             <form>
-                <table>
+                <sheet>
                     <group>
                     <field name="name" string="Content Heading"/>
                     <field placeholder="Write Content here" type="text" name="comment" string="Content" id="content_text"  rows="10" cols="30" maxlength = "40"/>
+                        <field name="date_from"/>
                     <field name="data_file"/>
                     </group>
 
-                </table>
+                </sheet>
             </form>
         </field>
     </record>

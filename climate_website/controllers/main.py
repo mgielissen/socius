@@ -12,7 +12,7 @@ class Website(Website):
         super(Website, self).index(**kwargs)
         data=[]
 
-        details = request.env['backend.model'].search([])
+        details = request.env['backend.model'].search([], order='date_from desc')
         for i in details:
             data.append(i)
         return http.request.render('climate_website.climate_homepage_template', {'data':data})
