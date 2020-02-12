@@ -34,18 +34,12 @@ class Website(Website):
         base_url = "http://api.openweathermap.org/data/2.5/weather?"
         _logger.info("++++++++++++++++=")
         _logger.info(kwargs)
-        x = {}
-        if not kwargs:
-            city_name = "india"
-            complete_url = base_url + "appid=" + api_key + "&q=" + city_name
-            response = requests.get(complete_url)
-            x = response.json()
-
-        if "fw" in kwargs:
-            city_name = "india"
-            complete_url = base_url + "appid=" + api_key + "&q=" + city_name
-            response = requests.get(complete_url)
-            x = response.json()
+        
+        
+        city_name = "india"
+        complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+        response = requests.get(complete_url)
+        x = response.json()
 
         if "id" in kwargs:
             if kwargs['id']:
