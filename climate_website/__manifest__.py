@@ -7,7 +7,7 @@
     'author': "Socius Innovative Global Brains",
 
     # any module necessary for this one to work correctly
-    'depends': ['base','website'],
+    'depends': ['base','website','web'],
 
     # always loaded
     'data': [

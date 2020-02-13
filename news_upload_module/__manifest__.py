@@ -3,7 +3,7 @@
     'description': 'News Upload Module',
     'author': "Socius Innovative Global Brains",
 
-    'depends': ['base'],
+    'depends': ['base','web'],
     'data': [
         'views/upload_view.xml',
         'security/ir.model.access.csv',
