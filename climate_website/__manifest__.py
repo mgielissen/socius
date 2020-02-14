@@ -17,6 +17,7 @@
          'views/slider_content_view.xml',
          'views/bear_content_view.xml',
          'views/top_menu.xml',
+         'views/slides_view.xml',
     ],
     # only loaded in demonstration mode
     'installable': True,

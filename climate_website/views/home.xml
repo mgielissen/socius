@@ -49,7 +49,7 @@
                       <ol class="carousel-indicators o_we_no_overlay">
                         <li data-target="#myCarousel1580444200284" data-slide-to="0" class="active"/>
                         <li data-target="#myCarousel1580444200284" data-slide-to="1"/>
-<!--                        <li data-target="#myCarousel1580444200284" data-slide-to="2"/>-->
+                        <li data-target="#myCarousel1580444200284" data-slide-to="2"/>
                       </ol>
                       <div class="carousel-inner">
                         <div class="carousel-item oe_img_bg pt152 pb152 active" style="background-image: url(&quot;climate_website/static/src/img/cover.jpeg&quot;);height:  731.55px;" data-name="Slide">
@@ -67,6 +67,13 @@
                                     <h1 class="s_title_thin o_default_snippet_text" style="font-size: 51px;font-weight: 600;margin-top: -4%;margin-left: 32%;color:black;">Polar bears and climate change: <br></br>What does the science say?
                                     </h1>
                                     <a href="/page/bear" class="btn btn-primary flat o_default_snippet_text" style="margin-left: 32%;color:white;">read story</a>
+                            </div>
+                        </div>
+                          <div class="carousel-item oe_img_bg pt96 pb96" style="background-image: url(&quot;/climate_website/static/src/img/1.jpeg&quot;);    height: 763px;" data-name="Slide">
+                            <div class="col-lg-12 s_title" data-name="Title">
+                                    <h1 class="s_title_thin o_default_snippet_text" style="font-size: 51px;font-weight: 600;margin-top: -4%;margin-left: 32%;color:black;">Breitsch-Klimameter
+                                    </h1>
+                                    <a href="/page/slides" class="btn btn-primary flat o_default_snippet_text" style="margin-left: 32%;color:white;">read story</a>
                             </div>
                         </div>
                       </div>

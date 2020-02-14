@@ -13,3 +13,8 @@ class Beardetail(http.Controller):
     @http.route(['/page/bear'], type='http', auth="public", website=True, csrf=False)
     def bear_content(self):
         return request.render('climate_website.bear_content', {})
+
+class Sliderdetail(http.Controller):
+    @http.route(['/page/slides'], type='http', auth="public", website=True, csrf=False)
+    def slider_content(self):
+        return request.render('climate_website.slider_content', {})

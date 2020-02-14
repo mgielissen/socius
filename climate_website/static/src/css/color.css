@@ -190,3 +190,11 @@ h1:target {
   overflow: hidden;
 
 }
+
+
+.s_carousel.s_carousel_default .carousel-control-prev-icon:before, .s_carousel.s_carousel_default .carousel-control-next-icon:before, .s_quotes_carousel.s_carousel_default .carousel-control-prev-icon:before, .s_quotes_carousel.s_carousel_default .carousel-control-next-icon:before {
+    background-color: transparent;
+    font-size: 2rem;
+    color: #101010;
+    text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
