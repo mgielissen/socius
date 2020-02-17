@@ -1,0 +1,346 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* climate_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-17 12:45+0000\n"
+"PO-Revision-Date: 2020-02-17 12:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content_view
+msgid ""
+"<br/>\n"
+"                                    Crocodile bones, 50 million years old, have shown up on the Arctic island of\n"
+"                                    Ellesmere, and that’s a problem.\n"
+"                                    Scientists have been unable to explain how the Arctic could have warmed up enough to\n"
+"                                    host those tropical creatures.\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.bear_content
+msgid ""
+"<br/>\n"
+"                                    Polar bears (Ursus maritimus) are the poster child for the impacts of climate change\n"
+"                                    on species, and justifiably so.\n"
+"                                    To date, global warming has been most pronounced in the Arctic, and this trend is\n"
+"                                    projected to continue.\n"
+"                                    There are suggestions that before mid-century we could have a nearly ice-free Arctic\n"
+"                                    in the summer.\n"
+"                                    This increases the urgency with which we must act to reduce our greenhouse gas\n"
+"                                    emissions to delay or avoid some of the worst consequences of climate change.\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content
+msgid ""
+"<span class=\"carousel-control-next-icon\" style=\"margin-right: 419px;border-radius: 0% 0 0 0%;\"/>\n"
+"                                    <span class=\"sr-only o_default_snippet_text\">Next</span>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"<span class=\"carousel-control-next-icon\"/>\n"
+"                                    <span class=\"sr-only\">Next</span>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"<span class=\"carousel-control-next-icon\"/>\n"
+"                                <span class=\"sr-only o_default_snippet_text\">Next</span>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content
+msgid ""
+"<span class=\"carousel-control-prev-icon\" style=\"margin-left: 270%; border-radius: 0% 0 0 0%;\"/>\n"
+"                                    <span class=\"sr-only o_default_snippet_text\">Previous</span>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"<span class=\"carousel-control-prev-icon\"/>\n"
+"                                    <span class=\"sr-only\">Previous</span>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"<span class=\"carousel-control-prev-icon\"/>\n"
+"                                <span class=\"sr-only o_default_snippet_text\">Previous</span>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.bear_content
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content_view
+msgid "<strong>Back to home</strong>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "ARTICLES"
+msgstr "ARTIKEL"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Breitsch-Klimameter"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "CONTACT US"
+msgstr "KONTAKTIERE UNS"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Causes"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Climate Change: How Do We Know?"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Clouds, Arctic Crocodiles<br/>and a New Climate Model"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "EXPLORE"
+msgstr "ERKUNDEN"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Effects"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Evidence"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "FACTS"
+msgstr "FAKTEN"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Facts"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"Flowing Antarctic\n"
+"                                                            Ice Mapped 10 Times More Accurately"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content_view
+msgid ""
+"Given that they are so insubstantial—all the moisture that constitutes clouds\n"
+"                                    planetwide at any given moment would amount to\n"
+"                                    no more than a micro-thin film of water if spread out over Earth’s surface—clouds\n"
+"                                    have an outsized impact on our climate.\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.bear_content
+msgid ""
+"However, their dependence on sea ice makes them highly vulnerable to a changing\n"
+"                                    climate. Polar bears rely heavily on the sea ice\n"
+"                                    environment for traveling, hunting, mating, resting, and in some areas, maternal\n"
+"                                    dens. In particular, they depend heavily on sea ice-dependent\n"
+"                                    prey, such as ringed and bearded seals. Additionally, their long generation time and\n"
+"                                    low reproductive rate may limit their ability to adapt to\n"
+"                                    changes in the environment.\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Humidity"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+#: model_terms:ir.ui.view,arch_db:climate_website.content
+msgid "Icon"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"Landsat\n"
+"                                                            Illustrates Five Decades of Change to Greenland Glaciers"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Logo"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "More Interesting Topics"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"NASA Soil Data\n"
+"                                                            Join the Air Force"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"NASA's Operation\n"
+"                                                            IceBridge Completes Eleven Years of Polar Surveys"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid ""
+"NASA, French Space\n"
+"                                                            Laser Measures Massive Migration of Ocean Animals"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content
+msgid "Next"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Odoo - Sample 1 for three columns"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Odoo - Sample 2 for three columns"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.bear_content
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content_view
+msgid "Placeholder"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Please enter the city"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Polar bears and climate change: <br/>What does the science say?"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.bear_content
+msgid ""
+"Polar bears have relatively high genetic diversity within the species and can\n"
+"                                    disperse over very long distances, suggesting that\n"
+"                                    they may have some capacity to adapt to the ongoing changes in the Arctic.\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Pressure"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content
+msgid "Previous"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.bear_content
+msgid ""
+"Priorities for climate-informed polar bear conservation should include identifying\n"
+"                                    and protecting the “last ice areas,” the parts of the Arctic\n"
+"                                    that are projected to retain sea ice farthest into the future. It is also important\n"
+"                                    to increase monitoring of polar bear populations, particularly\n"
+"                                    their responses to declining sea ice. And as polar bears spend more time on land, we\n"
+"                                    need to be prepared to manage for increased human-polar bear conflict.\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "RESOURCES"
+msgstr "RESSOURCEN"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "SCIENCE"
+msgstr "WISSENSCHAFT"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "SIGNIN"
+msgstr "EINLOGGEN"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "SIGNOUT"
+msgstr "AUSLOGGEN"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.new_header_layout
+msgid "SOLUTIONS"
+msgstr "LÖSUNGEN"
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Solutions"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "Temperature"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.slider_content_view
+msgid ""
+"They cool Earth's surface by reflecting much of the Sun’s energy back into space.\n"
+"                                    They warm like blankets by preventing the\n"
+"                                    planet from radiating away all of the heat it absorbs each day. And of course, they\n"
+"                                    are key components of the water cycle,\n"
+"                                    storing water that has evaporated from the oceans and other bodies and then\n"
+"                                    returning it as rain and snow.\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "What is Climate Change?"
+msgstr ""
+
+#. module: climate_website
+#: model_terms:ir.ui.view,arch_db:climate_website.climate_homepage_template
+msgid "read story"
+msgstr ""
