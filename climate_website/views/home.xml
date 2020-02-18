@@ -65,7 +65,7 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item oe_img_bg pt152 pb152 active"
-                                     style="background-image: url(&quot;/climate_website/static/src/img/cover.jpeg&quot;);height:  731.55px;"
+                                     style="background-image: url('/climate_website/static/src/img/cover.jpeg');height: 731.55px;"
                                      data-name="Slide">
                                     <div class="container">
                                         <div class="row content">
@@ -83,7 +83,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item oe_img_bg pt96 pb96"
-                                     style="background-image: url(&quot;/climate_website/static/src/img/bear.png&quot;);height: 592.55px;"
+                                     style="background-image: url('/climate_website/static/src/img/bear.png');height: 592.55px;"
                                      data-name="Slide">
                                     <div class="col-lg-12 s_title" data-name="Title">
                                         <h1 class="s_title_thin o_default_snippet_text"
@@ -96,7 +96,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item oe_img_bg pt96 pb96"
-                                     style="background-image: url(&quot;/climate_website/static/src/img/1.jpeg&quot;);height: 763px;"
+                                     style="background-image: url('/climate_website/static/src/img/1.jpeg');height: 763px;"
                                      data-name="Slide">
                                     <div class="col-lg-12 s_title" data-name="Title">
                                         <h1 class="s_title_thin o_default_snippet_text"
