@@ -13,8 +13,9 @@
             <xpath expr="//div[@id='wrapwrap']//header[@id='top']" position="after">
 				<div>
 						<ul class="topnav">
+							<li><a href="/">HOME</a></li>
 						  <li><a  href="#facts" target="_self">FACTS</a></li>
-						  <li><a href="#articles">ARTICLES</a></li>
+						  <li><a href="/blog">ARTICLES</a></li>
 						  <li><a href="#solutions">SOLUTIONS</a></li>
 							<li><a href="#contact">EXPLORE</a></li>
 							<li><a href="#contact">RESOURCES</a></li>
