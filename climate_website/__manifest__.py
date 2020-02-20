@@ -7,17 +7,18 @@
     'author': "Socius Innovative Global Brains",
 
     # any module necessary for this one to work correctly
-    'depends': ['base','website','web','news_upload_module'],
+    'depends': ['base', 'website', 'web', 'news_upload_module'],
 
     # always loaded
     'data': [
          'views/home.xml',
          'views/assets.xml',
-         'views/content.xml',
-         'views/slider_content_view.xml',
-         'views/bear_content_view.xml',
-         'views/top_menu.xml',
-         'views/slides_view.xml',
+         # 'views/content.xml',
+         # 'views/slider_content_view.xml',
+         # 'views/bear_content_view.xml',
+         # 'views/top_menu.xml',
+         # 'views/slides_view.xml',
+
     ],
     # only loaded in demonstration mode
     'installable': True,

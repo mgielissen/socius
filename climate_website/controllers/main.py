@@ -13,56 +13,76 @@ class Website(Website):
     @http.route(auth='public')
     def index(self, data={}, **kwargs):
         super(Website, self).index(**kwargs)
+        print(kwargs)
 
         data=[]
         api_data = []
         error = []
-
-        print(datetime.now(tzlocal()))
-
-        defaults = {
-            'start': datetime.now(),
-            'finish': datetime.now() + timedelta(hours=1),
-        }
-        print(defaults)
+        count=0
+        # print(kwargs['pledge'])
 
         details = request.env['backend.model'].search([], order='date_from desc')
         for i in details:
             data.append(i)
 
-        api_key = "71522e7cc5de039712346f640e2642fd"
-        base_url = "http://api.openweathermap.org/data/2.5/weather?"
-        _logger.info("++++++++++++++++=")
-        _logger.info(kwargs)
-        
-        
-        city_name = "india"
-        complete_url = base_url + "appid=" + api_key + "&q=" + city_name
-        response = requests.get(complete_url)
-        x = response.json()
+        if "pledge" in kwargs:
+            # if "smname" in kwargs:
+            pledge = request.env['pledge.model'].create({'name': kwargs['pledge'], 'comment': 'njj', 'tot_count': kwargs['smname']})
+        # details = request.env['pledge.model'].search([])
+        # for i in details:
+        #     data.append(i)
 
-        if "id" in kwargs:
-            if kwargs['id']:
-                city_name = kwargs['id']  # Give city name
-                complete_url = base_url + "appid=" + api_key + "&q=" + city_name  # complete url address
-                response = requests.get(complete_url)
-                x = response.json()
+        if "check" in kwargs:
+            count=count+1
+            print(count)
 
-            else:
-                city_name = ''
-                complete_url = base_url + "appid=" + api_key + "&q=" + city_name
-                response = requests.get(complete_url)
-                x = response.json()
-
-        if x["cod"] == "404" or x["cod"] == "400":
-            error.append(x)
-
-            return http.request.render('climate_website.climate_homepage_template', {'data': data, 'error': error})
-
-        else:
-            error.append(x)
-            api_data.append(x['main'])
-
-            return http.request.render('climate_website.climate_homepage_template', {'data': data, 'api': api_data, 'error': error})
+        # #----------- timezone----------------
+        # print(datetime.now(tzlocal()))
+        #
+        # defaults = {
+        #     'start': datetime.now(),
+        #     'finish': datetime.now() + timedelta(hours=1),
+        # }
+        # print(defaults)
 
 
+
+
+        # ---------------------api integration-------------------------
+        # api_key = "71522e7cc5de039712346f640e2642fd"
+        # base_url = "http://api.openweathermap.org/data/2.5/weather?"
+        # _logger.info("++++++++++++++++=")
+        # _logger.info(kwargs)
+        #
+        #
+        # city_name = "india"
+        # complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+        # response = requests.get(complete_url)
+        # x = response.json()
+        #
+        # if "id" in kwargs:
+        #     if kwargs['id']:
+        #         city_name = kwargs['id']  # Give city name
+        #         complete_url = base_url + "appid=" + api_key + "&q=" + city_name  # complete url address
+        #         response = requests.get(complete_url)
+        #         x = response.json()
+        #
+        #     else:
+        #         city_name = ''
+        #         complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+        #         response = requests.get(complete_url)
+        #         x = response.json()
+        #
+        # if x["cod"] == "404" or x["cod"] == "400":
+        #     error.append(x)
+        #
+        #     return http.request.render('climate_website.climate_homepage_template', {'data': data, 'error': error})
+        #
+        # else:
+        #     error.append(x)
+        #     api_data.append(x['main'])
+        #
+        #     return http.request.render('climate_website.climate_homepage_template', {'data': data, 'api': api_data, 'error': error})
+
+
+        return http.request.render('climate_website.climate_homepage_template', {'data': data})

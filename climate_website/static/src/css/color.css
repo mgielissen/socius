@@ -201,3 +201,19 @@ h1:target {
     color: #101010;
     text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
+
+.form-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    /* padding-top: 20%; */
+    padding: 13% 36% 20% 36%;
+    /* padding-left: 40%; */
+    /*background-color: black;*/
+    background-color: rgba(21, 19, 19, 0.61);
+    /*-webkit-transition: 0.5s;
+    overflow: auto;
+    transition: all 0.3s linear;*/
+}
