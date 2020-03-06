@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+
+        <template id="footer_custom_inherit" inherit_id="website.footer_custom">
+            <xpath expr="//div[@id='footer']//section//div//div//div//p//a[6]" position="after">
+                <a t-if="website.social_skype"
+                   t-att-href="website.social_skype"
+                   class="btn btn-sm btn-link"
+                   target="_blank">
+                    <i class="fa fa-2x fa-skype"/>
+                </a>
+                <a t-if="website.social_whatsapp"
+                   t-att-href="website.social_whatsapp"
+                   class="btn btn-sm btn-link"
+                   target="_blank">
+                    <i class="fa fa-2x fa-whatsapp"/>
+                </a>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
