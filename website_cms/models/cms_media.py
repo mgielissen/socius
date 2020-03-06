@@ -82,7 +82,7 @@ class CMSMedia(models.Model):
                 'website.orderable.mixin',
                 'website.coremetadata.mixin',
                 'website.image.mixin',
-                #'website.security.mixin'
+                'website.security.mixin'
 		]
 
     name = fields.Char(
